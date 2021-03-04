@@ -62,7 +62,7 @@ class WindowManager {
     const options: E.BrowserWindowConstructorOptions = {
       width: 1200,
       height: 900,
-      frame: false,
+      frame: true,
       webPreferences: {
         sandbox: false,
         zoomFactor: 1,

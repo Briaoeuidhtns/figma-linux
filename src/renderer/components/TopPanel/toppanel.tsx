@@ -37,20 +37,6 @@ const TopPanel: React.FunctionComponent<TopPanelProps> = props => {
         )}
       </div>
       <Tabs />
-      <div className="panelButtons">
-        <Button className="button_clear button_title" onClick={props.openMenu}>
-          <Icon color="currentColor" type="MenuCorner" size="14" />
-        </Button>
-        <Button className="button_clear button_control" onClick={props.miniw}>
-          <Icon color="var(--fg-header-control)" type="Minimize" size="16" />
-        </Button>
-        <Button className="button_clear button_control" onClick={props.maxiw}>
-          <Icon color="var(--fg-header-control)" type={props.isMaximized ? "Restore" : "Maximize"} size="16" />
-        </Button>
-        <Button className="button_clear button_control button_close" onClick={props.closew}>
-          <Icon color="var(--fg-header-control)" type="Close" size="16" />
-        </Button>
-      </div>
     </div>
   );
 };
